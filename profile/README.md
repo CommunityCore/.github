@@ -1,7 +1,7 @@
 <h1 align="center">Community Core</h1>
 
 <p align="center">
-  🚀 <strong>Community Core</strong> is an open-source, community-driven organization focused on enhancing FiveM development through collaboration, innovation, and improved frameworks.
+  🚀 <strong>Community Core</strong> is an open-source, community-driven enhancement of QBCore for FiveM, focused on improving development through collaboration, innovation, and better frameworks.
 </p>
 
 <hr>
