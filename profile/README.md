@@ -22,15 +22,21 @@ Community Core is dedicated to building and maintaining open-source FiveM resour
 
 <h2>👥 Contributors</h2>
 
-<p>Special thanks to everyone contributing to Community Core! Below are the current contributors:</p>
+<p>Community Core is made possible by the dedicated efforts of our contributors. Below is a list of our active contributors:</p>
 
 <p>
   <a href="https://github.com/orgs/CommunityCore/people">
-    <img src="https://github.com/CommunityCore.png?size=200" width="50" alt="Community Core Org">
+    <img src="https://github.com/CommunityCore.png?size=200" width="100" alt="Community Core Organization">
   </a>
 </p>
 
-<p>
+<p align="center">
+  <a href="https://github.com/orgs/CommunityCore/people">
+    <img src="https://contrib.rocks/image?repo=CommunityCore/CommunityCore" alt="GitHub contributors">
+  </a>
+</p>
+
+<p align="center">
   <a href="https://github.com/orgs/CommunityCore/people">
     <img src="https://img.shields.io/github/contributors/CommunityCore?color=blue&style=flat-square" alt="GitHub contributors">
   </a>
