@@ -16,21 +16,21 @@ jobs:
         run: |
           curl -s https://api.github.com/orgs/CommunityCore/members | jq -r '.[] | "<a href=\"" + .html_url + "\"><img src=\"" + .avatar_url + "\" width=\"50\" height=\"50\" style=\"border-radius: 50%; margin: 5px;\"></a>"' > contributors.html
 
-      - name: Update README
+      - name: Update Profile README
         run: |
-          # Ensure README.md is modified
+          # Ensure /profile/README.md is modified
           sed -i '/<!-- CONTRIBUTORS-START -->/,/<!-- CONTRIBUTORS-END -->/c\
-          <!-- CONTRIBUTORS-START -->\n'$(cat contributors.html)'\n<!-- CONTRIBUTORS-END -->' README.md
+          <!-- CONTRIBUTORS-START -->\n'$(cat contributors.html)'\n<!-- CONTRIBUTORS-END -->' profile/README.md
 
       - name: Check for Changes
         id: check_changes
-        run: echo "::set-output name=changed::$(git status --porcelain README.md | wc -l)"
+        run: echo "::set-output name=changed::$(git status --porcelain profile/README.md | wc -l)"
 
       - name: Commit and Push Changes
         if: steps.check_changes.outputs.changed != '0'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
+          git add profile/README.md
           git commit -m "Update contributors section"
           git push
